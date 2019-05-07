@@ -8,6 +8,7 @@ public class Constants {
     public static final String LOGINFORM_PASSWORD_FIELD = "com.fdbr.android.debug:id/inputPassword";
     public static final String LOGINFORM_LOGIN_BUTTON = "com.fdbr.android.debug:id/buttonLogin";
     public static final String VALID_USERNAME = "putwid";
+    public static final String VALID_EMAIL = "fazlur.f.rahman@gmail.com";
     public static final String VALID_PASSWORD = "tester123";
     public static final String HOME_HEADER_TEXT = "com.fdbr.android.debug:id/labelHello";
 }

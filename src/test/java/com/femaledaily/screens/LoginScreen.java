@@ -27,10 +27,16 @@ public class LoginScreen extends ScreenBase {
         return this;
     }
 
-    public LoginScreen doLogin(){
-        txtUsername.sendKeys(Constants.VALID_USERNAME);
-        txtPassword.sendKeys(Constants.VALID_PASSWORD);
-        btnLogin.click();
+    public LoginScreen doLogin(String type){
+        if (type.equals("username")){
+            txtUsername.sendKeys(Constants.VALID_USERNAME);
+            txtPassword.sendKeys(Constants.VALID_PASSWORD);
+            btnLogin.click();
+        } else if (type.equals("email")){
+            txtUsername.sendKeys(Constants.VALID_EMAIL);
+            txtPassword.sendKeys(Constants.VALID_PASSWORD);
+            btnLogin.click();
+        }
         return this;
     }
 }

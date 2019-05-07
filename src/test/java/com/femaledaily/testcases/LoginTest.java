@@ -16,7 +16,19 @@ public class LoginTest extends TestBase{
         onBoardingScreen.validateHeaderText();
         onBoardingScreen.tapBtnLogin();
         loginScreen.validateHeaderText();
-        loginScreen.doLogin();
+        loginScreen.doLogin("username");
+        homeScreen.waitForHeaderText();
+    }
+
+    @Test
+    public void loginUsingEmail(){
+        onBoardingScreen = new OnBoardingScreen(driver);
+        loginScreen = new LoginScreen(driver);
+        homeScreen = new HomeScreen(driver);
+        onBoardingScreen.validateHeaderText();
+        onBoardingScreen.tapBtnLogin();
+        loginScreen.validateHeaderText();
+        loginScreen.doLogin("email");
         homeScreen.waitForHeaderText();
     }
 
