@@ -3,8 +3,10 @@ package com.femaledaily.base;
 import com.femaledaily.screens.HomeScreen;
 import com.femaledaily.screens.LoginScreen;
 import com.femaledaily.screens.OnBoardingScreen;
+import com.femaledaily.screens.SignUpScreen;
 import com.femaledaily.utils.AppiumServer;
 import com.femaledaily.utils.CommonUtils;
+import com.github.javafaker.Faker;
 import io.appium.java_client.android.AndroidDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
@@ -18,6 +20,8 @@ public class TestBase {
     public OnBoardingScreen onBoardingScreen;
     public LoginScreen loginScreen;
     public HomeScreen homeScreen;
+    public SignUpScreen signUpScreen;
+    public Faker faker;
 
     @BeforeSuite
     public void setUp() throws IOException {

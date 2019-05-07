@@ -14,9 +14,11 @@ public class OnBoardingScreen extends ScreenBase{
     }
 
     @AndroidFindBy(xpath = Constants.ONBOARDING_HEADER_TEXT)
-    public WebElement txtHeader;
+    private WebElement txtHeader;
     @AndroidFindBy(id = Constants.ONBOARDING_LOGIN_BUTTON)
-    public WebElement btnLogin;
+    private WebElement btnLogin;
+    @AndroidFindBy(id = Constants.ONBOARDING_SIGNUP_BUTTON)
+    private WebElement btnSignUp;
 
     public OnBoardingScreen validateHeaderText(){
         Assert.assertEquals("Your beauty journey starts here", txtHeader.getText());
@@ -25,6 +27,11 @@ public class OnBoardingScreen extends ScreenBase{
 
     public OnBoardingScreen tapBtnLogin(){
         btnLogin.click();
+        return this;
+    }
+
+    public OnBoardingScreen tapBtnSignUp(){
+        btnSignUp.click();
         return this;
     }
 }
