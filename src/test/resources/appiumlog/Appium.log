@@ -1,0 +1,527 @@
+2019-05-07 13:10:54:287 [Appium] Welcome to Appium v1.10.1
+2019-05-07 13:10:54:288 [Appium] Non-default server args:
+2019-05-07 13:10:54:289 [Appium]   logFile: /home/faiz/Documents/fdnautomationframework/src/test/resources/appiumlog/Appium.log
+2019-05-07 13:10:54:289 [Appium]   localTimezone: true
+2019-05-07 13:10:54:307 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2019-05-07 13:10:54:478 [HTTP] --> GET /wd/hub/status
+2019-05-07 13:10:54:478 [HTTP] {}
+2019-05-07 13:10:54:480 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2019-05-07 13:10:54:481 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.10.1"}}
+2019-05-07 13:10:54:485 [HTTP] <-- GET /wd/hub/status 200 5 ms - 68
+2019-05-07 13:10:54:485 [HTTP] 
+2019-05-07 13:10:54:966 [HTTP] --> POST /wd/hub/session
+2019-05-07 13:10:54:966 [HTTP] {"desiredCapabilities":{"app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","platformName":"Android","deviceName":"J9AXGF00D336G2E"},"capabilities":{"firstMatch":[{"appium:app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","appium:automationName":"UiAutomator2","appium:deviceName":"J9AXGF00D336G2E","platformName":"android"}]}}
+2019-05-07 13:10:54:966 [W3C] Calling AppiumDriver.createSession() with args: [{"app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","platformName":"Android","deviceName":"J9AXGF00D336G2E"},null,{"firstMatch":[{"appium:app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","appium:automationName":"UiAutomator2","appium:deviceName":"J9AXGF00D336G2E","platformName":"android"}]}]
+2019-05-07 13:10:54:967 [BaseDriver] Event 'newSessionRequested' logged at 1557209454967 (13:10:54 GMT+0700 (Western Indonesia Time))
+2019-05-07 13:10:54:972 [Appium] Creating new AndroidUiautomator2Driver (v1.24.0) session
+2019-05-07 13:10:54:972 [Appium] Capabilities:
+2019-05-07 13:10:54:972 [Appium]   platformName: android
+2019-05-07 13:10:54:973 [Appium]   app: /home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk
+2019-05-07 13:10:54:973 [Appium]   automationName: UiAutomator2
+2019-05-07 13:10:54:973 [Appium]   deviceName: J9AXGF00D336G2E
+2019-05-07 13:10:54:975 [BaseDriver] W3C capabilities {"alwaysMatch":{"platformNa... and MJSONWP desired capabilities {"app":"/home/faiz/Document... were provided
+2019-05-07 13:10:54:975 [BaseDriver] Creating session with W3C capabilities: {"alwaysMatch":{"platformNa...
+2019-05-07 13:10:54:980 [BaseDriver] Session created with session id: f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:10:55:033 [BaseDriver] Using local app '/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk'
+2019-05-07 13:10:55:034 [UiAutomator2] Checking whether app is actually present
+2019-05-07 13:10:55:084 [AndroidDriver] Java version is: 1.8.0_201
+2019-05-07 13:10:55:086 [ADB] Checking whether adb is present
+2019-05-07 13:10:55:090 [ADB] Found 3 'build-tools' folders under '/home/faiz/Android/Sdk' (newest first):
+2019-05-07 13:10:55:090 [ADB]     /home/faiz/Android/Sdk/build-tools/29.0.0-rc2
+2019-05-07 13:10:55:090 [ADB]     /home/faiz/Android/Sdk/build-tools/28.0.3
+2019-05-07 13:10:55:090 [ADB]     /home/faiz/Android/Sdk/build-tools/27.0.3
+2019-05-07 13:10:55:091 [ADB] Using adb from /home/faiz/Android/Sdk/platform-tools/adb
+2019-05-07 13:10:55:091 [AndroidDriver] Retrieving device list
+2019-05-07 13:10:55:091 [ADB] Trying to find a connected android device
+2019-05-07 13:10:55:092 [ADB] Getting connected devices...
+2019-05-07 13:10:55:101 [ADB] 1 device(s) connected
+2019-05-07 13:10:55:102 [AndroidDriver] Using device: J9AXGF00D336G2E
+2019-05-07 13:10:55:103 [ADB] Setting device id to J9AXGF00D336G2E
+2019-05-07 13:10:55:103 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell getprop ro.build.version.sdk'
+2019-05-07 13:10:55:163 [ADB] Current device property 'ro.build.version.sdk': 27
+2019-05-07 13:10:55:164 [ADB] Device API level: 27
+2019-05-07 13:10:55:165 [AndroidDriver] Parsing package and activity from app manifest
+2019-05-07 13:10:55:167 [ADB] Using apkanalyzer from /home/faiz/Android/Sdk/tools/bin/apkanalyzer
+2019-05-07 13:10:55:168 [ADB] Starting '/home/faiz/Android/Sdk/tools/bin/apkanalyzer' with args ["-h","manifest","print","/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk"]
+2019-05-07 13:10:56:188 [ADB] Package name: 'com.fdbr.android.debug'
+2019-05-07 13:10:56:189 [ADB] Main activity name: 'com.fdbr.android.ui.splash.SplashActivity'
+2019-05-07 13:10:56:189 [AndroidDriver] Parsed package and activity are: com.fdbr.android.debug/com.fdbr.android.ui.splash.SplashActivity
+2019-05-07 13:10:56:190 [ADB] Getting all processes with uiautomator
+2019-05-07 13:10:56:190 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell ps'
+2019-05-07 13:10:56:397 [ADB] Unable to root adb daemon: 'adbd cannot run as root in production builds'. Continuing
+2019-05-07 13:10:56:397 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell kill -9 1498'
+2019-05-07 13:10:56:457 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell kill -9 1498'
+2019-05-07 13:10:56:481 [UiAutomator2] Unable to stop uiautomator process: Error executing adbExec. Original error: 'Command '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell kill -9 1498' exited with code 1'; Stderr: '/system/bin/sh: kill: 1498: Operation not permitted'; Code: '1'
+2019-05-07 13:10:56:482 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell am force-stop io.appium.uiautomator2.server'
+2019-05-07 13:10:56:594 [ADB] Checking app cert for /home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v2.7.0.apk
+2019-05-07 13:10:56:597 [ADB] Using apksigner from /home/faiz/Android/Sdk/build-tools/29.0.0-rc2/apksigner
+2019-05-07 13:10:56:598 [ADB] Starting '/home/faiz/Android/Sdk/build-tools/29.0.0-rc2/apksigner' with args '["verify","--print-certs","/home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v2.7.0.apk"]'
+2019-05-07 13:10:56:960 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-05-07 13:10:56:961 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-05-07 13:10:56:961 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-05-07 13:10:56:961 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-05-07 13:10:56:961 [ADB] 
+2019-05-07 13:10:56:961 [ADB] '/home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v2.7.0.apk' is already signed.
+2019-05-07 13:10:56:962 [ADB] Checking app cert for /home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk
+2019-05-07 13:10:56:962 [ADB] Starting '/home/faiz/Android/Sdk/build-tools/29.0.0-rc2/apksigner' with args '["verify","--print-certs","/home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk"]'
+2019-05-07 13:10:57:342 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-05-07 13:10:57:342 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-05-07 13:10:57:342 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-05-07 13:10:57:342 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-05-07 13:10:57:343 [ADB] 
+2019-05-07 13:10:57:343 [ADB] '/home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' is already signed.
+2019-05-07 13:10:57:344 [ADB] Getting install status for io.appium.uiautomator2.server
+2019-05-07 13:10:57:344 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package io.appium.uiautomator2.server'
+2019-05-07 13:10:57:424 [ADB] 'io.appium.uiautomator2.server' is installed
+2019-05-07 13:10:57:425 [ADB] Getting package info for 'io.appium.uiautomator2.server'
+2019-05-07 13:10:57:425 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package io.appium.uiautomator2.server'
+2019-05-07 13:10:57:500 [ADB] Checking whether aapt is present
+2019-05-07 13:10:57:503 [ADB] Using aapt from /home/faiz/Android/Sdk/build-tools/29.0.0-rc2/aapt
+2019-05-07 13:10:57:513 [ADB] The installed 'io.appium.uiautomator2.server' package does not require upgrade ('2.7.0' >= '2.7.0')
+2019-05-07 13:10:57:513 [ADB] Getting install status for io.appium.uiautomator2.server.test
+2019-05-07 13:10:57:514 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package io.appium.uiautomator2.server.test'
+2019-05-07 13:10:57:578 [ADB] 'io.appium.uiautomator2.server.test' is installed
+2019-05-07 13:10:57:578 [ADB] Getting package info for 'io.appium.uiautomator2.server.test'
+2019-05-07 13:10:57:578 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package io.appium.uiautomator2.server.test'
+2019-05-07 13:10:57:650 [ADB] Cannot read version codes of '/home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'
+2019-05-07 13:10:57:650 [ADB] Cannot read version names of '/home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk' and/or 'io.appium.uiautomator2.server.test'. Assuming correct app version is already installed
+2019-05-07 13:10:57:651 [UiAutomator2] Waiting up to 20000ms for instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' to be available
+2019-05-07 13:10:57:652 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell pm list instrumentation'
+2019-05-07 13:10:58:215 [UiAutomator2] Instrumentation 'io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner' available
+2019-05-07 13:10:58:217 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E wait-for-device'
+2019-05-07 13:10:58:230 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell echo ping'
+2019-05-07 13:10:58:255 [AndroidDriver] Pushing settings apk to device...
+2019-05-07 13:10:58:256 [ADB] Getting install status for io.appium.settings
+2019-05-07 13:10:58:257 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package io.appium.settings'
+2019-05-07 13:10:58:326 [ADB] 'io.appium.settings' is installed
+2019-05-07 13:10:58:327 [ADB] Getting package info for 'io.appium.settings'
+2019-05-07 13:10:58:327 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package io.appium.settings'
+2019-05-07 13:10:58:411 [ADB] The installed 'io.appium.settings' package does not require upgrade ('2.10.0' >= '2.10.0')
+2019-05-07 13:10:58:412 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell ps'
+2019-05-07 13:10:58:605 [ADB] Device API level: 27
+2019-05-07 13:10:58:606 [ADB] Device API level: 27
+2019-05-07 13:10:58:607 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-05-07 13:10:59:037 [ADB] Device API level: 27
+2019-05-07 13:10:59:038 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell appops set io.appium.settings android\:mock_location allow'
+2019-05-07 13:10:59:109 [AndroidDriver] setDeviceLanguageCountry requires language or country.
+2019-05-07 13:10:59:110 [AndroidDriver] Got language: 'null' and country: 'null'
+2019-05-07 13:10:59:112 [Logcat] Starting logcat capture
+2019-05-07 13:10:59:169 [UiAutomator2] Forwarding UiAutomator2 Server port 6790 to 8200
+2019-05-07 13:10:59:170 [ADB] Forwarding system: 8200 to device: 6790
+2019-05-07 13:10:59:171 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E forward tcp\:8200 tcp\:6790'
+2019-05-07 13:10:59:179 [ADB] Checking app cert for /home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk
+2019-05-07 13:10:59:179 [ADB] Starting '/home/faiz/Android/Sdk/build-tools/29.0.0-rc2/apksigner' with args '["verify","--print-certs","/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk"]'
+2019-05-07 13:11:00:718 [ADB] apksigner stdout: Signer #1 certificate DN: EMAILADDRESS=android@android.com, CN=Android, OU=Android, O=Android, L=Mountain View, ST=California, C=US
+2019-05-07 13:11:00:718 [ADB] Signer #1 certificate SHA-256 digest: a40da80a59d170caa950cf15c18c454d47a39b26989d8b640ecd745ba71bf5dc
+2019-05-07 13:11:00:718 [ADB] Signer #1 certificate SHA-1 digest: 61ed377e85d386a8dfee6b864bd85b0bfaa5af81
+2019-05-07 13:11:00:718 [ADB] Signer #1 certificate MD5 digest: e89b158e4bcf988ebd09eb83f5378e87
+2019-05-07 13:11:00:718 [ADB] 
+2019-05-07 13:11:00:718 [ADB] '/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk' is already signed.
+2019-05-07 13:11:00:719 [ADB] Getting install status for com.fdbr.android.debug
+2019-05-07 13:11:00:719 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package com.fdbr.android.debug'
+2019-05-07 13:11:00:784 [ADB] 'com.fdbr.android.debug' is installed
+2019-05-07 13:11:00:784 [ADB] Getting install status for com.fdbr.android.debug
+2019-05-07 13:11:00:785 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package com.fdbr.android.debug'
+2019-05-07 13:11:00:860 [ADB] 'com.fdbr.android.debug' is installed
+2019-05-07 13:11:00:861 [ADB] Getting package info for 'com.fdbr.android.debug'
+2019-05-07 13:11:00:862 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package com.fdbr.android.debug'
+2019-05-07 13:11:00:944 [ADB] The installed 'com.fdbr.android.debug' package does not require upgrade ('1.0.0' >= '1.0.0')
+2019-05-07 13:11:00:944 [AndroidDriver] Performing fast reset on 'com.fdbr.android.debug'
+2019-05-07 13:11:00:944 [ADB] Getting install status for com.fdbr.android.debug
+2019-05-07 13:11:00:945 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys package com.fdbr.android.debug'
+2019-05-07 13:11:01:036 [ADB] 'com.fdbr.android.debug' is installed
+2019-05-07 13:11:01:036 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell am force-stop com.fdbr.android.debug'
+2019-05-07 13:11:01:125 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell pm clear com.fdbr.android.debug'
+2019-05-07 13:11:01:942 [AndroidDriver] Performed fast reset on the installed 'com.fdbr.android.debug' application (stop and clear)
+2019-05-07 13:11:01:943 [ADB] Getting all processes with uiautomator
+2019-05-07 13:11:01:944 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell ps'
+2019-05-07 13:11:02:111 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell am force-stop io.appium.uiautomator2.server'
+2019-05-07 13:11:02:201 [UiAutomator2] Starting uiautomator2 server 2.7.0
+2019-05-07 13:11:02:202 [UiAutomator2] Using UIAutomator2 server from '/home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-v2.7.0.apk' and test from '/home/faiz/.nvm/versions/node/v11.8.0/lib/node_modules/appium/node_modules/appium-uiautomator2-server/apks/appium-uiautomator2-server-debug-androidTest.apk'
+2019-05-07 13:11:02:202 [UiAutomator2] Running command: 'adb -s J9AXGF00D336G2E shell am instrument -w io.appium.uiautomator2.server.test/android.support.test.runner.AndroidJUnitRunner'
+2019-05-07 13:11:02:207 [UiAutomator2] Waiting up to 20000ms for UiAutomator2 to be online...
+2019-05-07 13:11:02:208 [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-05-07 13:11:02:209 [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-05-07 13:11:02:225 [JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-05-07 13:11:03:226 [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-05-07 13:11:03:227 [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-05-07 13:11:03:235 [JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-05-07 13:11:04:236 [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-05-07 13:11:04:237 [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-05-07 13:11:04:245 [JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-05-07 13:11:05:246 [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-05-07 13:11:05:246 [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-05-07 13:11:05:252 [JSONWP Proxy] Got an unexpected response: {"code":"ECONNRESET"}
+2019-05-07 13:11:06:254 [JSONWP Proxy] Matched '/status' to command name 'getStatus'
+2019-05-07 13:11:06:255 [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8200/wd/hub/status] with no body
+2019-05-07 13:11:06:382 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"SESSIONID\",\"status\":0,\"value\":\"Status Invoked\"}"
+2019-05-07 13:11:06:384 [JSONWP Proxy] Matched '/session' to command name 'createSession'
+2019-05-07 13:11:06:384 [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8200/wd/hub/session] with body: {"desiredCapabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug"}}
+2019-05-07 13:11:06:454 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":"Created Session"}
+2019-05-07 13:11:06:468 [JSONWP Proxy] Proxying [GET /appium/device/info] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/appium/device/info] with no body
+2019-05-07 13:11:06:522 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{\"androidId\":\"544c69d4a1f6a427\",\"manufacturer\":\"asus\",\"model\":\"ASUS_X00TD\",\"brand\":\"asus\",\"apiVersion\":\"27\",\"platformVersion\":\"8.1.0\",\"carrierName\":\"XL 4G LTE\",\"realDisplaySize\":\"1080x2160\",\"displayDensity\":480}}"
+2019-05-07 13:11:06:524 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys window'
+2019-05-07 13:11:06:612 [AndroidDriver] Screen already unlocked, doing nothing
+2019-05-07 13:11:06:612 [UiAutomator2] UiAutomator2 did not start the activity we were waiting for, 'com.fdbr.android.debug/com.fdbr.android.ui.splash.SplashActivity'. Starting it ourselves
+2019-05-07 13:11:06:613 [ADB] Device API level: 27
+2019-05-07 13:11:06:614 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell am start -W -n com.fdbr.android.debug/com.fdbr.android.ui.splash.SplashActivity -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+2019-05-07 13:11:08:307 [ADB] Waiting up to 20000ms for activity matching pkg: 'com.fdbr.android.debug' and activity: 'com.fdbr.android.ui.splash.SplashActivity' to be focused
+2019-05-07 13:11:08:307 [ADB] Possible activities, to be checked: 'com.fdbr.android.ui.splash.SplashActivity', 'com.fdbr.android.debug.com.fdbr.android.ui.splash.SplashActivity'
+2019-05-07 13:11:08:309 [ADB] Getting focused package and activity
+2019-05-07 13:11:08:309 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell dumpsys window windows'
+2019-05-07 13:11:08:362 [ADB] Found package: 'com.fdbr.android.debug' and fully qualified activity name : 'com.fdbr.android.ui.splash.SplashActivity'
+2019-05-07 13:11:08:365 [JSONWP Proxy] Proxying [GET /appium/device/pixel_ratio] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/appium/device/pixel_ratio] with body: {}
+2019-05-07 13:11:08:388 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":3}"
+2019-05-07 13:11:08:396 [JSONWP Proxy] Matched '/appium/device/system_bars' to command name 'getSystemBars'
+2019-05-07 13:11:08:397 [JSONWP Proxy] Proxying [GET /appium/device/system_bars] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/appium/device/system_bars] with body: {}
+2019-05-07 13:11:08:413 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{\"statusBar\":72}}"
+2019-05-07 13:11:08:414 [JSONWP Proxy] Matched '/window/current/size' to command name 'getWindowSize'
+2019-05-07 13:11:08:414 [JSONWP Proxy] Proxying [GET /window/current/size] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/window/current/size] with body: {}
+2019-05-07 13:11:08:432 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{\"height\":2016,\"width\":1080}}"
+2019-05-07 13:11:08:433 [Appium] New AndroidUiautomator2Driver session created successfully, session f0c40aa2-6c3b-453b-b139-9b76697ba7d8 added to master session list
+2019-05-07 13:11:08:435 [BaseDriver] Event 'newSessionStarted' logged at 1557209468435 (13:11:08 GMT+0700 (Western Indonesia Time))
+2019-05-07 13:11:08:437 [W3C (f0c40aa2)] Cached the protocol value 'W3C' for the new session f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:440 [W3C (f0c40aa2)] Responding to client with driver.createSession() result: {"capabilities":{"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}}
+2019-05-07 13:11:08:443 [HTTP] <-- POST /wd/hub/session 200 13476 ms - 962
+2019-05-07 13:11:08:443 [HTTP] 
+2019-05-07 13:11:08:501 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:501 [HTTP] {}
+2019-05-07 13:11:08:502 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:511 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:511 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:512 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:529 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:530 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:531 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 30 ms - 894
+2019-05-07 13:11:08:531 [HTTP] 
+2019-05-07 13:11:08:536 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:537 [HTTP] {}
+2019-05-07 13:11:08:537 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:538 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:538 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:539 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:554 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:555 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:556 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 19 ms - 894
+2019-05-07 13:11:08:556 [HTTP] 
+2019-05-07 13:11:08:565 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/timeouts
+2019-05-07 13:11:08:565 [HTTP] {"implicit":20000}
+2019-05-07 13:11:08:566 [W3C (f0c40aa2)] Calling AppiumDriver.timeouts() with args: [null,null,null,null,20000,"f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:567 [BaseDriver] W3C timeout argument: {"implicit":20000}}
+2019-05-07 13:11:08:567 [BaseDriver] Set implicit wait to 20000ms
+2019-05-07 13:11:08:568 [W3C (f0c40aa2)] Responding to client with driver.timeouts() result: null
+2019-05-07 13:11:08:569 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/timeouts 200 4 ms - 14
+2019-05-07 13:11:08:569 [HTTP] 
+2019-05-07 13:11:08:603 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:603 [HTTP] {}
+2019-05-07 13:11:08:603 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:604 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:604 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:604 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:620 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:621 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:621 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 18 ms - 894
+2019-05-07 13:11:08:621 [HTTP] 
+2019-05-07 13:11:08:624 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:624 [HTTP] {}
+2019-05-07 13:11:08:624 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:625 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:625 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:625 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:641 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:642 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:642 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 19 ms - 894
+2019-05-07 13:11:08:643 [HTTP] 
+2019-05-07 13:11:08:752 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:752 [HTTP] {}
+2019-05-07 13:11:08:753 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:754 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:754 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:755 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:769 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:770 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:770 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 18 ms - 894
+2019-05-07 13:11:08:770 [HTTP] 
+2019-05-07 13:11:08:773 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:774 [HTTP] {}
+2019-05-07 13:11:08:774 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:775 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:775 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:775 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:790 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:791 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:792 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 18 ms - 894
+2019-05-07 13:11:08:792 [HTTP] 
+2019-05-07 13:11:08:799 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:799 [HTTP] {}
+2019-05-07 13:11:08:800 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:800 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:801 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:801 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:815 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:816 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:817 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 17 ms - 894
+2019-05-07 13:11:08:817 [HTTP] 
+2019-05-07 13:11:08:821 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:821 [HTTP] {}
+2019-05-07 13:11:08:821 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:823 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:823 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:823 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:841 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:842 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:843 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 22 ms - 894
+2019-05-07 13:11:08:843 [HTTP] 
+2019-05-07 13:11:08:849 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:08:849 [HTTP] {}
+2019-05-07 13:11:08:850 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:851 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:08:851 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:08:851 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:08:868 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:08:869 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:08:869 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 20 ms - 894
+2019-05-07 13:11:08:870 [HTTP] 
+2019-05-07 13:11:08:895 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element
+2019-05-07 13:11:08:896 [HTTP] {"using":"xpath","value":"//android.widget.TextView[@text='Your beauty journey starts here']"}
+2019-05-07 13:11:08:897 [W3C (f0c40aa2)] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.TextView[@text='Your beauty journey starts here']","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:08:899 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-07 13:11:08:900 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-07 13:11:08:902 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:08:902 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@text='Your beauty journey starts here']","context":"","multiple":false}
+2019-05-07 13:11:09:024 [JSONWP Proxy] Got an unexpected response: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-05-07 13:11:09:025 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-07 13:11:09:025 [BaseDriver] Waited for 125 ms so far
+2019-05-07 13:11:09:526 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:09:527 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@text='Your beauty journey starts here']","context":"","multiple":false}
+2019-05-07 13:11:09:681 [JSONWP Proxy] Got an unexpected response: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-05-07 13:11:09:682 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-07 13:11:09:683 [BaseDriver] Waited for 782 ms so far
+2019-05-07 13:11:10:183 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:10:184 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@text='Your beauty journey starts here']","context":"","multiple":false}
+2019-05-07 13:11:10:303 [JSONWP Proxy] Got an unexpected response: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-05-07 13:11:10:303 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-07 13:11:10:304 [BaseDriver] Waited for 1404 ms so far
+2019-05-07 13:11:10:808 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:10:809 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@text='Your beauty journey starts here']","context":"","multiple":false}
+2019-05-07 13:11:10:972 [JSONWP Proxy] Got an unexpected response: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-05-07 13:11:10:972 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-07 13:11:10:972 [BaseDriver] Waited for 2072 ms so far
+2019-05-07 13:11:11:473 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:11:473 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@text='Your beauty journey starts here']","context":"","multiple":false}
+2019-05-07 13:11:13:580 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":{"ELEMENT":"31cd154a-9153-4680-aad3-eb54f84a35cf"}}
+2019-05-07 13:11:13:580 [W3C (f0c40aa2)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"31cd154a-9153-4680-aad3-eb54f84a35cf"}
+2019-05-07 13:11:13:581 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element 200 4685 ms - 88
+2019-05-07 13:11:13:581 [HTTP] 
+2019-05-07 13:11:13:586 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/31cd154a-9153-4680-aad3-eb54f84a35cf/text
+2019-05-07 13:11:13:586 [HTTP] {}
+2019-05-07 13:11:13:587 [W3C (f0c40aa2)] Driver proxy active, passing request on via HTTP proxy
+2019-05-07 13:11:13:588 [JSONWP Proxy] Matched '/wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/31cd154a-9153-4680-aad3-eb54f84a35cf/text' to command name 'getText'
+2019-05-07 13:11:13:589 [JSONWP Proxy] Proxying [GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/31cd154a-9153-4680-aad3-eb54f84a35cf/text] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element/31cd154a-9153-4680-aad3-eb54f84a35cf/text] with body: {}
+2019-05-07 13:11:13:625 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":\"Your beauty journey starts here\"}"
+2019-05-07 13:11:13:626 [JSONWP Proxy] Replacing sessionId bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782 with f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:13:627 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/31cd154a-9153-4680-aad3-eb54f84a35cf/text 200 41 ms - 105
+2019-05-07 13:11:13:628 [HTTP] 
+2019-05-07 13:11:13:632 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:13:632 [HTTP] {}
+2019-05-07 13:11:13:632 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:13:633 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:13:633 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:13:633 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:13:656 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:13:658 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:13:659 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 26 ms - 894
+2019-05-07 13:11:13:659 [HTTP] 
+2019-05-07 13:11:13:665 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element
+2019-05-07 13:11:13:666 [HTTP] {"using":"id","value":"com.fdbr.android.debug:id/buttonLogin"}
+2019-05-07 13:11:13:666 [W3C (f0c40aa2)] Calling AppiumDriver.findElement() with args: ["id","com.fdbr.android.debug:id/buttonLogin","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:13:667 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-07 13:11:13:668 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-07 13:11:13:668 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:13:669 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"id","selector":"com.fdbr.android.debug:id/buttonLogin","context":"","multiple":false}
+2019-05-07 13:11:13:881 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":{"ELEMENT":"a2d53891-6984-4059-b490-05fdbb1adf15"}}
+2019-05-07 13:11:13:882 [W3C (f0c40aa2)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"a2d53891-6984-4059-b490-05fdbb1adf15"}
+2019-05-07 13:11:13:883 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element 200 218 ms - 88
+2019-05-07 13:11:13:884 [HTTP] 
+2019-05-07 13:11:13:888 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/a2d53891-6984-4059-b490-05fdbb1adf15/click
+2019-05-07 13:11:13:889 [HTTP] {"id":"a2d53891-6984-4059-b490-05fdbb1adf15"}
+2019-05-07 13:11:13:889 [W3C (f0c40aa2)] Calling AppiumDriver.click() with args: ["a2d53891-6984-4059-b490-05fdbb1adf15","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:13:891 [JSONWP Proxy] Matched '/element/a2d53891-6984-4059-b490-05fdbb1adf15/click' to command name 'click'
+2019-05-07 13:11:13:891 [JSONWP Proxy] Proxying [POST /element/a2d53891-6984-4059-b490-05fdbb1adf15/click] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element/a2d53891-6984-4059-b490-05fdbb1adf15/click] with body: {"element":"a2d53891-6984-4059-b490-05fdbb1adf15"}
+2019-05-07 13:11:13:949 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":true}
+2019-05-07 13:11:13:950 [W3C (f0c40aa2)] Responding to client with driver.click() result: true
+2019-05-07 13:11:13:952 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/a2d53891-6984-4059-b490-05fdbb1adf15/click 200 63 ms - 14
+2019-05-07 13:11:13:952 [HTTP] 
+2019-05-07 13:11:13:956 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:13:957 [HTTP] {}
+2019-05-07 13:11:13:957 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:13:958 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:13:958 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:13:958 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:13:975 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:13:976 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:13:977 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 20 ms - 894
+2019-05-07 13:11:13:977 [HTTP] 
+2019-05-07 13:11:13:983 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element
+2019-05-07 13:11:13:984 [HTTP] {"using":"xpath","value":"//android.widget.TextView[@text='Welcome to Female Daily']"}
+2019-05-07 13:11:13:984 [W3C (f0c40aa2)] Calling AppiumDriver.findElement() with args: ["xpath","//android.widget.TextView[@text='Welcome to Female Daily']","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:13:985 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-07 13:11:13:985 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-07 13:11:13:986 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:13:986 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"xpath","selector":"//android.widget.TextView[@text='Welcome to Female Daily']","context":"","multiple":false}
+2019-05-07 13:11:16:006 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":{"ELEMENT":"a56014c4-da1c-422f-9c0d-02fe5f85dedb"}}
+2019-05-07 13:11:16:007 [W3C (f0c40aa2)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"a56014c4-da1c-422f-9c0d-02fe5f85dedb"}
+2019-05-07 13:11:16:008 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element 200 2024 ms - 88
+2019-05-07 13:11:16:008 [HTTP] 
+2019-05-07 13:11:16:012 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/a56014c4-da1c-422f-9c0d-02fe5f85dedb/text
+2019-05-07 13:11:16:013 [HTTP] {}
+2019-05-07 13:11:16:013 [W3C (f0c40aa2)] Driver proxy active, passing request on via HTTP proxy
+2019-05-07 13:11:16:014 [JSONWP Proxy] Matched '/wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/a56014c4-da1c-422f-9c0d-02fe5f85dedb/text' to command name 'getText'
+2019-05-07 13:11:16:015 [JSONWP Proxy] Proxying [GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/a56014c4-da1c-422f-9c0d-02fe5f85dedb/text] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element/a56014c4-da1c-422f-9c0d-02fe5f85dedb/text] with body: {}
+2019-05-07 13:11:16:071 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":\"Welcome to Female Daily\"}"
+2019-05-07 13:11:16:071 [JSONWP Proxy] Replacing sessionId bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782 with f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:16:072 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/a56014c4-da1c-422f-9c0d-02fe5f85dedb/text 200 60 ms - 97
+2019-05-07 13:11:16:073 [HTTP] 
+2019-05-07 13:11:16:076 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:16:077 [HTTP] {}
+2019-05-07 13:11:16:077 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:16:079 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:16:079 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:16:079 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:16:111 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:16:112 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:16:112 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 36 ms - 894
+2019-05-07 13:11:16:113 [HTTP] 
+2019-05-07 13:11:16:120 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element
+2019-05-07 13:11:16:120 [HTTP] {"using":"id","value":"com.fdbr.android.debug:id/inputUsernameEmail"}
+2019-05-07 13:11:16:121 [W3C (f0c40aa2)] Calling AppiumDriver.findElement() with args: ["id","com.fdbr.android.debug:id/inputUsernameEmail","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:16:123 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-07 13:11:16:123 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-07 13:11:16:124 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:16:124 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"id","selector":"com.fdbr.android.debug:id/inputUsernameEmail","context":"","multiple":false}
+2019-05-07 13:11:16:314 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":{"ELEMENT":"5080397e-998b-4106-861b-a4e6ecbbee43"}}
+2019-05-07 13:11:16:315 [W3C (f0c40aa2)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5080397e-998b-4106-861b-a4e6ecbbee43"}
+2019-05-07 13:11:16:316 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element 200 196 ms - 88
+2019-05-07 13:11:16:316 [HTTP] 
+2019-05-07 13:11:16:327 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/5080397e-998b-4106-861b-a4e6ecbbee43/value
+2019-05-07 13:11:16:327 [HTTP] {"id":"5080397e-998b-4106-861b-a4e6ecbbee43","text":"putwid","value":["p","u","t","w","i","d"]}
+2019-05-07 13:11:16:328 [W3C (f0c40aa2)] Calling AppiumDriver.setValue() with args: [["p","u","t","w","i","d"],"5080397e-998b-4106-861b-a4e6ecbbee43","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:16:329 [JSONWP Proxy] Matched '/element/5080397e-998b-4106-861b-a4e6ecbbee43/value' to command name 'setValue'
+2019-05-07 13:11:16:330 [JSONWP Proxy] Proxying [POST /element/5080397e-998b-4106-861b-a4e6ecbbee43/value] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element/5080397e-998b-4106-861b-a4e6ecbbee43/value] with body: {"elementId":"5080397e-998b-4106-861b-a4e6ecbbee43","text":"putwid","replace":false}
+2019-05-07 13:11:17:110 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":""}
+2019-05-07 13:11:17:111 [W3C (f0c40aa2)] Responding to client with driver.setValue() result: ""
+2019-05-07 13:11:17:111 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/5080397e-998b-4106-861b-a4e6ecbbee43/value 200 784 ms - 12
+2019-05-07 13:11:17:111 [HTTP] 
+2019-05-07 13:11:17:114 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:17:114 [HTTP] {}
+2019-05-07 13:11:17:114 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:17:116 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:17:116 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:17:116 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:17:143 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:17:144 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:17:145 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 31 ms - 894
+2019-05-07 13:11:17:145 [HTTP] 
+2019-05-07 13:11:17:150 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element
+2019-05-07 13:11:17:150 [HTTP] {"using":"id","value":"com.fdbr.android.debug:id/inputPassword"}
+2019-05-07 13:11:17:151 [W3C (f0c40aa2)] Calling AppiumDriver.findElement() with args: ["id","com.fdbr.android.debug:id/inputPassword","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:17:152 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-07 13:11:17:153 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-07 13:11:17:153 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:17:153 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"id","selector":"com.fdbr.android.debug:id/inputPassword","context":"","multiple":false}
+2019-05-07 13:11:17:885 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":{"ELEMENT":"5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c"}}
+2019-05-07 13:11:17:886 [W3C (f0c40aa2)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c"}
+2019-05-07 13:11:17:886 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element 200 736 ms - 88
+2019-05-07 13:11:17:887 [HTTP] 
+2019-05-07 13:11:17:892 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c/value
+2019-05-07 13:11:17:893 [HTTP] {"id":"5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c","text":"tester123","value":["t","e","s","t","e","r","1","2","3"]}
+2019-05-07 13:11:17:894 [W3C (f0c40aa2)] Calling AppiumDriver.setValue() with args: [["t","e","s","t","e","r","1","2","3"],"5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:17:895 [JSONWP Proxy] Matched '/element/5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c/value' to command name 'setValue'
+2019-05-07 13:11:17:896 [JSONWP Proxy] Proxying [POST /element/5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c/value] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element/5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c/value] with body: {"elementId":"5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c","text":"tester123","replace":false}
+2019-05-07 13:11:18:503 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":""}
+2019-05-07 13:11:18:504 [W3C (f0c40aa2)] Responding to client with driver.setValue() result: ""
+2019-05-07 13:11:18:505 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/5a2c99a4-a8e0-4a78-b7fe-c80c0d6e052c/value 200 612 ms - 12
+2019-05-07 13:11:18:505 [HTTP] 
+2019-05-07 13:11:18:507 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:18:507 [HTTP] {}
+2019-05-07 13:11:18:507 [W3C (f0c40aa2)] Calling AppiumDriver.getSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:18:508 [UiAutomator2] Getting session details from server to mix in
+2019-05-07 13:11:18:508 [JSONWP Proxy] Matched '/' to command name 'getSession'
+2019-05-07 13:11:18:509 [JSONWP Proxy] Proxying [GET /] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with body: {}
+2019-05-07 13:11:18:537 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":{}}"
+2019-05-07 13:11:18:538 [W3C (f0c40aa2)] Responding to client with driver.getSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E"},"platformName":"android","app":"/home/faiz/Documents/fdnautomationframework/src/test/resources/app/app-debug.apk","automationName":"UiAutomator2","deviceName":"J9AXGF00D336G2E","deviceUDID":"J9AXGF00D336G2E","appPackage":"com.fdbr.android.debug","deviceApiLevel":27,"platformVersion":"8.1.0","deviceScreenSize":"1080x2160","deviceScreenDensity":480,"deviceModel":"ASUS_X00TD","deviceManufacturer":"asus","pixelRatio":3,"statBarHeight":72,"viewportRect":{"left":0,"top":72,"width":1080,"height":1944}}
+2019-05-07 13:11:18:539 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 32 ms - 894
+2019-05-07 13:11:18:539 [HTTP] 
+2019-05-07 13:11:18:545 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element
+2019-05-07 13:11:18:545 [HTTP] {"using":"id","value":"com.fdbr.android.debug:id/buttonLogin"}
+2019-05-07 13:11:18:546 [W3C (f0c40aa2)] Calling AppiumDriver.findElement() with args: ["id","com.fdbr.android.debug:id/buttonLogin","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:18:548 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-07 13:11:18:548 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-07 13:11:18:549 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:18:550 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"id","selector":"com.fdbr.android.debug:id/buttonLogin","context":"","multiple":false}
+2019-05-07 13:11:19:146 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":{"ELEMENT":"c0926861-abff-4b2e-87f5-8b33a89792b8"}}
+2019-05-07 13:11:19:147 [W3C (f0c40aa2)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"c0926861-abff-4b2e-87f5-8b33a89792b8"}
+2019-05-07 13:11:19:148 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element 200 603 ms - 88
+2019-05-07 13:11:19:148 [HTTP] 
+2019-05-07 13:11:19:152 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/c0926861-abff-4b2e-87f5-8b33a89792b8/click
+2019-05-07 13:11:19:153 [HTTP] {"id":"c0926861-abff-4b2e-87f5-8b33a89792b8"}
+2019-05-07 13:11:19:153 [W3C (f0c40aa2)] Calling AppiumDriver.click() with args: ["c0926861-abff-4b2e-87f5-8b33a89792b8","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:19:155 [JSONWP Proxy] Matched '/element/c0926861-abff-4b2e-87f5-8b33a89792b8/click' to command name 'click'
+2019-05-07 13:11:19:155 [JSONWP Proxy] Proxying [POST /element/c0926861-abff-4b2e-87f5-8b33a89792b8/click] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element/c0926861-abff-4b2e-87f5-8b33a89792b8/click] with body: {"element":"c0926861-abff-4b2e-87f5-8b33a89792b8"}
+2019-05-07 13:11:19:214 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":true}
+2019-05-07 13:11:19:215 [W3C (f0c40aa2)] Responding to client with driver.click() result: true
+2019-05-07 13:11:19:216 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/c0926861-abff-4b2e-87f5-8b33a89792b8/click 200 64 ms - 14
+2019-05-07 13:11:19:216 [HTTP] 
+2019-05-07 13:11:19:223 [HTTP] --> POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element
+2019-05-07 13:11:19:224 [HTTP] {"using":"id","value":"com.fdbr.android.debug:id/labelHello"}
+2019-05-07 13:11:19:224 [W3C (f0c40aa2)] Calling AppiumDriver.findElement() with args: ["id","com.fdbr.android.debug:id/labelHello","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:19:225 [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+2019-05-07 13:11:19:225 [BaseDriver] Waiting up to 20000 ms for condition
+2019-05-07 13:11:19:225 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:19:225 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"id","selector":"com.fdbr.android.debug:id/labelHello","context":"","multiple":false}
+2019-05-07 13:11:21:096 [JSONWP Proxy] Got an unexpected response: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":7,"value":"An element could not be located on the page using the given search parameters."}
+2019-05-07 13:11:21:097 [MJSONWP] Matched JSONWP error code 7 to NoSuchElementError
+2019-05-07 13:11:21:097 [BaseDriver] Waited for 1872 ms so far
+2019-05-07 13:11:21:600 [JSONWP Proxy] Matched '/element' to command name 'findElement'
+2019-05-07 13:11:21:601 [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element] with body: {"strategy":"id","selector":"com.fdbr.android.debug:id/labelHello","context":"","multiple":false}
+2019-05-07 13:11:23:437 [JSONWP Proxy] Got response with status 200: {"sessionId":"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782","status":0,"value":{"ELEMENT":"cbce96d6-134f-46c2-97e9-02531da125cb"}}
+2019-05-07 13:11:23:439 [W3C (f0c40aa2)] Responding to client with driver.findElement() result: {"element-6066-11e4-a52e-4f735466cecf":"cbce96d6-134f-46c2-97e9-02531da125cb"}
+2019-05-07 13:11:23:441 [HTTP] <-- POST /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element 200 4217 ms - 88
+2019-05-07 13:11:23:442 [HTTP] 
+2019-05-07 13:11:23:446 [HTTP] --> GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/cbce96d6-134f-46c2-97e9-02531da125cb/displayed
+2019-05-07 13:11:23:447 [HTTP] {}
+2019-05-07 13:11:23:448 [W3C (f0c40aa2)] Calling AppiumDriver.elementDisplayed() with args: ["cbce96d6-134f-46c2-97e9-02531da125cb","f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:23:451 [JSONWP Proxy] Matched '/element/cbce96d6-134f-46c2-97e9-02531da125cb/attribute/displayed' to command name 'getAttribute'
+2019-05-07 13:11:23:452 [JSONWP Proxy] Proxying [GET /element/cbce96d6-134f-46c2-97e9-02531da125cb/attribute/displayed] to [GET http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782/element/cbce96d6-134f-46c2-97e9-02531da125cb/attribute/displayed] with body: {}
+2019-05-07 13:11:23:495 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":\"true\"}"
+2019-05-07 13:11:23:496 [W3C (f0c40aa2)] Responding to client with driver.elementDisplayed() result: true
+2019-05-07 13:11:23:497 [HTTP] <-- GET /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8/element/cbce96d6-134f-46c2-97e9-02531da125cb/displayed 200 50 ms - 14
+2019-05-07 13:11:23:498 [HTTP] 
+2019-05-07 13:11:23:507 [HTTP] --> DELETE /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8
+2019-05-07 13:11:23:507 [HTTP] {}
+2019-05-07 13:11:23:507 [W3C (f0c40aa2)] Calling AppiumDriver.deleteSession() with args: ["f0c40aa2-6c3b-453b-b139-9b76697ba7d8"]
+2019-05-07 13:11:23:508 [BaseDriver] Event 'quitSessionRequested' logged at 1557209483508 (13:11:23 GMT+0700 (Western Indonesia Time))
+2019-05-07 13:11:23:508 [Appium] Removing session f0c40aa2-6c3b-453b-b139-9b76697ba7d8 from our master session list
+2019-05-07 13:11:23:509 [UiAutomator2] Deleting UiAutomator2 session
+2019-05-07 13:11:23:510 [UiAutomator2] Deleting UiAutomator2 server session
+2019-05-07 13:11:23:510 [JSONWP Proxy] Matched '/' to command name 'deleteSession'
+2019-05-07 13:11:23:511 [JSONWP Proxy] Proxying [DELETE /] to [DELETE http://localhost:8200/wd/hub/session/bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782] with no body
+2019-05-07 13:11:23:558 [JSONWP Proxy] Got response with status 200: "{\"sessionId\":\"bf462eca-7d5f-4e9d-a9a2-2d7b6ee19782\",\"status\":0,\"value\":\"Session deleted\"}"
+2019-05-07 13:11:23:558 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E shell am force-stop com.fdbr.android.debug'
+2019-05-07 13:11:23:691 [Logcat] Stopping logcat capture
+2019-05-07 13:11:23:695 [ADB] Removing forwarded port socket connection: 8200 
+2019-05-07 13:11:23:696 [ADB] Running '/home/faiz/Android/Sdk/platform-tools/adb -P 5037 -s J9AXGF00D336G2E forward --remove tcp\:8200'
+2019-05-07 13:11:23:703 [ADB] Device API level: 27
+2019-05-07 13:11:23:705 [BaseDriver] Event 'quitSessionFinished' logged at 1557209483705 (13:11:23 GMT+0700 (Western Indonesia Time))
+2019-05-07 13:11:23:705 [W3C (f0c40aa2)] Received response: null
+2019-05-07 13:11:23:706 [W3C (f0c40aa2)] But deleting session, so not returning
+2019-05-07 13:11:23:706 [W3C (f0c40aa2)] Responding to client with driver.deleteSession() result: null
+2019-05-07 13:11:23:707 [HTTP] <-- DELETE /wd/hub/session/f0c40aa2-6c3b-453b-b139-9b76697ba7d8 200 200 ms - 14
+2019-05-07 13:11:23:707 [HTTP] 
+2019-05-07 13:11:23:709 [Appium] Received SIGTERM - shutting down
+2019-05-07 13:11:24:472 [UiAutomator2] [UIAutomator2] io.appium.uiautomator2.server.test.AppiumUiAutomator2Server:.
+2019-05-07 13:11:24:472 [UiAutomator2] [UIAutomator2] Time: 20.051
+2019-05-07 13:11:24:473 [UiAutomator2] [UIAutomator2] OK (1 test)
+2019-05-07 13:11:24:478 uncaughtException: write EPIPE
+Error: write EPIPE
+    at WriteWrap.onWriteComplete [as oncomplete] (internal/stream_base_commons.js:66:16)
