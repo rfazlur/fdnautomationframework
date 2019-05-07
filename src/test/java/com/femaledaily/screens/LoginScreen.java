@@ -14,13 +14,13 @@ public class LoginScreen extends ScreenBase {
     }
 
     @AndroidFindBy(xpath = Constants.LOGINFORM_HEADER_TEXT)
-    public WebElement txtHeader;
+    private WebElement txtHeader;
     @AndroidFindBy(id = Constants.LOGINFORM_USERNAME_FIELD)
-    public WebElement txtUsername;
+    private WebElement txtUsername;
     @AndroidFindBy(id = Constants.LOGINFORM_PASSWORD_FIELD)
-    public WebElement txtPassword;
+    private WebElement txtPassword;
     @AndroidFindBy(id = Constants.LOGINFORM_LOGIN_BUTTON)
-    public WebElement btnLogin;
+    private WebElement btnLogin;
 
     public LoginScreen validateHeaderText(){
         Assert.assertEquals("Welcome to Female Daily", txtHeader.getText());
