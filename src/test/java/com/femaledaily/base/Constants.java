@@ -13,6 +13,11 @@ public class Constants {
     public static final String SIGNUPFORM_USERNAME_FIELD = "com.fdbr.android.debug:id/inputUsername";
     public static final String SIGNUPFORM_PASSWORD_FIELD = "com.fdbr.android.debug:id/inputPassword";
     public static final String SIGNUPFORM_SIGNUP_BUTTON = "com.fdbr.android.debug:id/buttonSignUp";
+    public static final String TAB_BAR_HOME = "com.fdbr.android.debug:id/homeFragment";
+    public static final String TAB_BAR_FEED = "com.fdbr.android.debug:id/feedFragment";
+    public static final String TAB_BAR_PLUS = "com.fdbr.android.debug:id/extra";
+    public static final String TAB_BAR_DISCOVER = "com.fdbr.android.debug:id/discoverFragment";
+    public static final String TAB_BAR_PROFILE = "com.fdbr.android.debug:id/profileFragment";
     public static final String VALID_USERNAME = "putwid";
     public static final String VALID_EMAIL = "fazlur.f.rahman@gmail.com";
     public static final String VALID_PASSWORD = "tester123";
