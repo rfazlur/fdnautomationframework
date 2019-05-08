@@ -1,35 +1,20 @@
 package com.femaledaily.testcases;
 
 import com.femaledaily.base.TestBase;
-import com.femaledaily.screens.HomeScreen;
-import com.femaledaily.screens.LoginScreen;
-import com.femaledaily.screens.OnBoardingScreen;
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase{
 
     @Test
     public void loginUsingUsername(){
-        onBoardingScreen = new OnBoardingScreen(driver);
-        loginScreen = new LoginScreen(driver);
-        homeScreen = new HomeScreen(driver);
-        onBoardingScreen.validateHeaderText();
-        onBoardingScreen.tapBtnLogin();
-        loginScreen.validateHeaderText();
-        loginScreen.doLogin("username");
-        homeScreen.waitForHeaderText();
+        femaleDaily.onBoardingScreen().tapButton("login");
+        femaleDaily.loginScreen().doLogin("username");
     }
 
     @Test
     public void loginUsingEmail(){
-        onBoardingScreen = new OnBoardingScreen(driver);
-        loginScreen = new LoginScreen(driver);
-        homeScreen = new HomeScreen(driver);
-        onBoardingScreen.validateHeaderText();
-        onBoardingScreen.tapBtnLogin();
-        loginScreen.validateHeaderText();
-        loginScreen.doLogin("email");
-        homeScreen.waitForHeaderText();
+        femaleDaily.onBoardingScreen().tapButton("login");
+        femaleDaily.loginScreen().doLogin("email");
     }
 
 }

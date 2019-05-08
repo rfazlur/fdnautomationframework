@@ -3,9 +3,9 @@
 <suite name="Default Suite">
     <test name="automateAndroid">
         <classes>
-            <class name="com.femaledaily.testcases.AddPost">
+            <class name="com.femaledaily.testcases.RegisterTest">
                 <methods>
-                    <include name="addPostImageOnly" />
+                    <include name="registerUser" />
                 </methods>
             </class>
         </classes>

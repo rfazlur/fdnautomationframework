@@ -3,40 +3,41 @@ package com.femaledaily.screens;
 import com.femaledaily.base.Constants;
 import com.femaledaily.base.ScreenBase;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 
 public class LoginScreen extends ScreenBase {
 
-    public LoginScreen(AndroidDriver driver) {
+    public LoginScreen(AndroidDriver<AndroidElement> driver) {
         super(driver);
     }
 
-    @AndroidFindBy(xpath = Constants.LOGINFORM_HEADER_TEXT)
-    private WebElement txtHeader;
     @AndroidFindBy(id = Constants.LOGINFORM_USERNAME_FIELD)
-    private WebElement txtUsername;
+    private AndroidElement txtUsername;
     @AndroidFindBy(id = Constants.LOGINFORM_PASSWORD_FIELD)
-    private WebElement txtPassword;
-    @AndroidFindBy(id = Constants.LOGINFORM_LOGIN_BUTTON)
-    private WebElement btnLogin;
+    private AndroidElement txtPassword;
 
-    public LoginScreen validateHeaderText(){
-        Assert.assertEquals("Welcome to Female Daily", txtHeader.getText());
-        return this;
+    private void setUsername(String username){
+        txtUsername.setValue(username);
     }
 
-    public LoginScreen doLogin(String type){
-        if (type.equals("username")){
-            txtUsername.sendKeys(Constants.VALID_USERNAME);
-            txtPassword.sendKeys(Constants.VALID_PASSWORD);
-            btnLogin.click();
-        } else if (type.equals("email")){
-            txtUsername.sendKeys(Constants.VALID_EMAIL);
-            txtPassword.sendKeys(Constants.VALID_PASSWORD);
-            btnLogin.click();
-        }
-        return this;
+    private void setPassword(String password){
+        txtPassword.setValue(password);
     }
+
+    public void doLogin(String type){
+        if (isElementPresentByXpath(Constants.LOGINFORM_HEADER_TEXT, 10))
+            if (type.equals("username")){
+                setUsername(Constants.VALID_CREDENTIALS[0]);
+                setPassword(Constants.VALID_CREDENTIALS[1]);
+                tapViewWithId(Constants.LOGINFORM_LOGIN_BUTTON);
+                isElementPresentById(Constants.HOME_LABEL_HELLO, 10);
+            } else if (type.equals("email")){
+                setUsername(Constants.VALID_CREDENTIALS[2]);
+                setPassword(Constants.VALID_CREDENTIALS[1]);
+                tapViewWithId(Constants.LOGINFORM_LOGIN_BUTTON);
+                isElementPresentById(Constants.HOME_LABEL_HELLO, 10);
+            }
+    }
+
 }

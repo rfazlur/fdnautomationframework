@@ -13,13 +13,15 @@ public class Constants {
     public static final String SIGNUPFORM_USERNAME_FIELD = "com.fdbr.android.debug:id/inputUsername";
     public static final String SIGNUPFORM_PASSWORD_FIELD = "com.fdbr.android.debug:id/inputPassword";
     public static final String SIGNUPFORM_SIGNUP_BUTTON = "com.fdbr.android.debug:id/buttonSignUp";
+    public static final String HOME_LABEL_HELLO = "com.fdbr.android.debug:id/labelHello";
     public static final String TAB_BAR_HOME = "com.fdbr.android.debug:id/homeFragment";
     public static final String TAB_BAR_FEED = "com.fdbr.android.debug:id/feedFragment";
     public static final String TAB_BAR_PLUS = "com.fdbr.android.debug:id/extra";
     public static final String TAB_BAR_DISCOVER = "com.fdbr.android.debug:id/discoverFragment";
     public static final String TAB_BAR_PROFILE = "com.fdbr.android.debug:id/profileFragment";
-    public static final String VALID_USERNAME = "putwid";
-    public static final String VALID_EMAIL = "fazlur.f.rahman@gmail.com";
-    public static final String VALID_PASSWORD = "tester123";
-    public static final String HOME_HEADER_TEXT = "com.fdbr.android.debug:id/labelHello";
+    public static final String PLUS_MENU_ADDREVIEW = "com.fdbr.android.debug:id/buttonAddReview";
+    public static final String PLUS_MENU_ADDPOST = "com.fdbr.android.debug:id/buttonAddPost";
+    public static final String PLUS_MENU_ADDPRODUCT = "com.fdbr.android.debug:id/buttonAddProduct";
+    public static final String PLUS_MENU_CANCEL = "com.fdbr.android.debug:id/buttonCancel";
+    public static final String[] VALID_CREDENTIALS = {"putwid", "tester123", "fazlur.f.rahman@gmail.com"};
 }
