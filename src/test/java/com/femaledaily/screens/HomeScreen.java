@@ -9,4 +9,8 @@ public class HomeScreen extends ScreenBase {
     public HomeScreen(AndroidDriver<AndroidElement> driver) {
         super(driver);
     }
+
+    public void tapMenuBar(String menu){
+
+    }
 }

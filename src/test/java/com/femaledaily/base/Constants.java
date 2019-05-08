@@ -14,6 +14,7 @@ public class Constants {
     public static final String SIGNUPFORM_PASSWORD_FIELD = "com.fdbr.android.debug:id/inputPassword";
     public static final String SIGNUPFORM_SIGNUP_BUTTON = "com.fdbr.android.debug:id/buttonSignUp";
     public static final String HOME_LABEL_HELLO = "com.fdbr.android.debug:id/labelHello";
+    public static final String TITLE_TOOLBAR_FEED = "//android.widget.TextView[@text='Feed']";
     public static final String TAB_BAR_HOME = "com.fdbr.android.debug:id/homeFragment";
     public static final String TAB_BAR_FEED = "com.fdbr.android.debug:id/feedFragment";
     public static final String TAB_BAR_PLUS = "com.fdbr.android.debug:id/extra";
@@ -23,5 +24,11 @@ public class Constants {
     public static final String PLUS_MENU_ADDPOST = "com.fdbr.android.debug:id/buttonAddPost";
     public static final String PLUS_MENU_ADDPRODUCT = "com.fdbr.android.debug:id/buttonAddProduct";
     public static final String PLUS_MENU_CANCEL = "com.fdbr.android.debug:id/buttonCancel";
+    public static final String POP_UP_DIALOG = "com.android.packageinstaller:id/dialog_container";
+    public static final String POP_UP_DIALOG_ALLOW = "com.android.packageinstaller:id/permission_allow_button";
+    public static final String CAPTURE_BUTTON = "com.fdbr.android.debug:id/buttonCapture";
+    public static final String CAPTURE_NEXT_BUTTON = "com.fdbr.android.debug:id/buttonMenuToolbar";
+    public static final String ADDPOSTFORM_NEXT_BUTTON = "com.fdbr.android.debug:id/buttonMenuToolbar";
+    public static final String ADDPOSTFORM_CAPTION_FIELD = "com.fdbr.android.debug:id/inputCaption";
     public static final String[] VALID_CREDENTIALS = {"putwid", "tester123", "fazlur.f.rahman@gmail.com"};
 }

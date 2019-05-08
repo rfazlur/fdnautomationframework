@@ -3,44 +3,31 @@ package com.femaledaily.utils;
 import com.femaledaily.base.Constants;
 import com.femaledaily.base.ScreenBase;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.pagefactory.AndroidFindBy;
-import org.openqa.selenium.WebElement;
+import io.appium.java_client.android.AndroidElement;
 
 public class TapMenuBar extends ScreenBase {
 
-    public TapMenuBar(AndroidDriver driver) {
+    public TapMenuBar(AndroidDriver<AndroidElement> driver) {
         super(driver);
     }
 
-    @AndroidFindBy(id = Constants.TAB_BAR_HOME)
-    private WebElement btnHome;
-    @AndroidFindBy(id = Constants.TAB_BAR_FEED)
-    private WebElement btnFeed;
-    @AndroidFindBy(id = Constants.TAB_BAR_PLUS)
-    private WebElement btnPlus;
-    @AndroidFindBy(id = Constants.TAB_BAR_DISCOVER)
-    private WebElement btnDiscover;
-    @AndroidFindBy(id = Constants.TAB_BAR_PROFILE)
-    private WebElement btnProfile;
-
-    public TapMenuBar tapMainMenu(String type){
-        switch (type){
+    public void tapMenu(String menu){
+        switch (menu){
             case "home":
-                btnHome.click();
+                tapViewWithId(Constants.TAB_BAR_HOME);
                 break;
             case "feed":
-                btnFeed.click();
+                tapViewWithId(Constants.TAB_BAR_FEED);
                 break;
             case "plus":
-                btnPlus.click();
+                tapViewWithId(Constants.TAB_BAR_PLUS);
                 break;
             case "discover":
-                btnDiscover.click();
+                tapViewWithId(Constants.TAB_BAR_DISCOVER);
                 break;
             case "profile":
-                btnProfile.click();
+                tapViewWithId(Constants.TAB_BAR_PROFILE);
                 break;
         }
-        return this;
     }
 }

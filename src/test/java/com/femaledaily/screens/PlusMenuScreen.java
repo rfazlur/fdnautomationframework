@@ -2,45 +2,43 @@ package com.femaledaily.screens;
 
 import com.femaledaily.base.Constants;
 import com.femaledaily.base.ScreenBase;
-import com.sun.org.apache.xpath.internal.operations.Plus;
+import com.github.javafaker.Faker;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import org.openqa.selenium.WebElement;
 
 public class PlusMenuScreen extends ScreenBase {
 
-    public PlusMenuScreen(AndroidDriver driver) {
+    public PlusMenuScreen(AndroidDriver<AndroidElement> driver) {
         super(driver);
     }
 
-    @AndroidFindBy(id = Constants.PLUS_MENU_ADDREVIEW)
-    private WebElement btnAddReview;
-    @AndroidFindBy(id = Constants.PLUS_MENU_ADDPOST)
-    private WebElement btnAddPost;
-    @AndroidFindBy(id = Constants.PLUS_MENU_ADDPRODUCT)
-    private WebElement btnAddProduct;
-    @AndroidFindBy(id = Constants.PLUS_MENU_CANCEL)
-    private WebElement btnCancel;
+    @AndroidFindBy(id = Constants.ADDPOSTFORM_CAPTION_FIELD)
+    private AndroidElement txtCaption;
 
-    public PlusMenuScreen tapMenu(String menu){
-        switch (menu){
-            case "addreview":
-                btnAddReview.click();
-                break;
-            case "addpost":
-                btnAddPost.click();
-                break;
-            case "addproduct":
-                btnAddProduct.click();
-                break;
-            case "cancel":
-                btnCancel.click();
-                break;
-        }
-        return this;
+    private void setCaption(String caption){
+        txtCaption.setValue(caption);
     }
 
-    /*public PlusMenuScreen doAddPost(){
-        btnAddPost.click();
-    }*/
+    private void checkOnPopUpDialog(){
+        if (isElementPresentById(Constants.POP_UP_DIALOG, 10))
+            tapViewWithId(Constants.POP_UP_DIALOG_ALLOW);
+    }
+
+    public void doAddPost(String type){
+        faker = new Faker();
+        if (type.equals("imageonly")){
+            if (isElementPresentById(Constants.PLUS_MENU_ADDPOST, 10))
+                tapViewWithId(Constants.PLUS_MENU_ADDPOST);
+            checkOnPopUpDialog();
+            checkOnPopUpDialog();
+            tapViewWithId(Constants.CAPTURE_BUTTON);
+            if (isElementPresentById(Constants.CAPTURE_NEXT_BUTTON, 10))
+                tapViewWithId(Constants.CAPTURE_NEXT_BUTTON);
+            setCaption(faker.lorem().sentence(10));
+            if (isElementPresentById(Constants.ADDPOSTFORM_NEXT_BUTTON, 10))
+                tapViewWithId(Constants.ADDPOSTFORM_NEXT_BUTTON);
+            isElementPresentByXpath(Constants.TITLE_TOOLBAR_FEED, 10);
+        }
+    }
 }
