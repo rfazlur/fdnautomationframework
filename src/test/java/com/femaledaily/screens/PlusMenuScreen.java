@@ -39,6 +39,22 @@ public class PlusMenuScreen extends ScreenBase {
             if (isElementPresentById(Constants.ADDPOSTFORM_NEXT_BUTTON, 10))
                 tapViewWithId(Constants.ADDPOSTFORM_NEXT_BUTTON);
             isElementPresentByXpath(Constants.TITLE_TOOLBAR_FEED, 10);
+        } else if (type.equals("tagproduct")){
+            if (isElementPresentById(Constants.PLUS_MENU_ADDPOST, 10))
+                tapViewWithId(Constants.PLUS_MENU_ADDPOST);
+            checkOnPopUpDialog();
+            checkOnPopUpDialog();
+            tapViewWithId(Constants.CAPTURE_BUTTON);
+            if (isElementPresentById(Constants.CAPTURE_NEXT_BUTTON, 10))
+                tapViewWithId(Constants.CAPTURE_NEXT_BUTTON);
+            setCaption(faker.lorem().sentence(10));
+            tapViewWithId(Constants.ADDPOSTFORM_ADD_PRODUCT_BUTTON);
+            if (isElementPresentByXpath(Constants.SELECTPRODUCT_LIST_PRODUCT, 10))
+                tapViewWithXpath(Constants.SELECTPRODUCT_LIST_PRODUCT);
+            tapViewWithId(Constants.SELECTPRODUCT_OK_BUTTON);
+            if (isElementPresentById(Constants.ADDPOSTFORM_NEXT_BUTTON, 10))
+                tapViewWithId(Constants.ADDPOSTFORM_NEXT_BUTTON);
+            isElementPresentByXpath(Constants.TITLE_TOOLBAR_FEED, 10);
         }
     }
 }

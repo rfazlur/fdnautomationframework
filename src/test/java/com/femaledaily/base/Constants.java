@@ -30,5 +30,8 @@ public class Constants {
     public static final String CAPTURE_NEXT_BUTTON = "com.fdbr.android.debug:id/buttonMenuToolbar";
     public static final String ADDPOSTFORM_NEXT_BUTTON = "com.fdbr.android.debug:id/buttonMenuToolbar";
     public static final String ADDPOSTFORM_CAPTION_FIELD = "com.fdbr.android.debug:id/inputCaption";
+    public static final String ADDPOSTFORM_ADD_PRODUCT_BUTTON = "com.fdbr.android.debug:id/labelTagProducts";
+    public static final String SELECTPRODUCT_LIST_PRODUCT = "//android.view.ViewGroup[@index='3']";
+    public static final String SELECTPRODUCT_OK_BUTTON = "com.fdbr.android.debug:id/buttonMenuToolbar";
     public static final String[] VALID_CREDENTIALS = {"putwid", "tester123", "fazlur.f.rahman@gmail.com"};
 }

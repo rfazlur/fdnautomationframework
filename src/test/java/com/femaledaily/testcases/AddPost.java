@@ -13,4 +13,12 @@ public class AddPost extends TestBase {
         femaleDaily.plusMenuScreen().doAddPost("imageonly");
     }
 
+    @Test
+    public void addPostTagProduct(){
+        femaleDaily.onBoardingScreen().tapButton("login");
+        femaleDaily.loginScreen().doLogin("username");
+        femaleDaily.tapMenuBar().tapMenu("plus");
+        femaleDaily.plusMenuScreen().doAddPost("tagproduct");
+    }
+
 }

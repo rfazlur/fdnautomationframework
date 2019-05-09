@@ -40,8 +40,8 @@ public class ScreenBase {
         }
     }
 
-    public boolean isElementPresentByXpath(String id, int timeOut) {
-        By by = By.xpath(id);
+    public boolean isElementPresentByXpath(String locator, int timeOut) {
+        By by = By.xpath(locator);
         try {
             WebDriverWait wait = new WebDriverWait(driver, timeOut);
             wait.until(ExpectedConditions.presenceOfElementLocated(by));
@@ -55,12 +55,30 @@ public class ScreenBase {
         findElementWithId(id).click();
     }
 
+    public void tapViewWithXpath(String locator) {
+        findElementWithXpath(locator).click();
+    }
+
     private AndroidElement findElementWithId(String id) {
 
         AndroidElement element = null;
         for (int i = 0; i < maxSwipeCount; i++) {
             try {
                 element = driver.findElementById(id);
+                if (isElementPresent(element)) break;
+            } catch (NoSuchElementException e) {
+                swipeUp();
+            }
+        }
+        return element;
+    }
+
+    private AndroidElement findElementWithXpath(String locator){
+
+        AndroidElement element = null;
+        for (int i = 0; i < maxSwipeCount; i++) {
+            try {
+                element = driver.findElement(By.xpath(locator));
                 if (isElementPresent(element)) break;
             } catch (NoSuchElementException e) {
                 swipeUp();

@@ -5,7 +5,7 @@
         <classes>
             <class name="com.femaledaily.testcases.AddPost">
                 <methods>
-                    <include name="addPostImageOnly" />
+                    <include name="addPostTagProduct" />
                 </methods>
             </class>
         </classes>
