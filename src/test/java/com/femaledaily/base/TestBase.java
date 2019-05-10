@@ -1,9 +1,5 @@
 package com.femaledaily.base;
 
-import com.femaledaily.screens.HomeScreen;
-import com.femaledaily.screens.LoginScreen;
-import com.femaledaily.screens.OnBoardingScreen;
-import com.femaledaily.screens.SignUpScreen;
 import com.femaledaily.utils.AppiumServer;
 import com.femaledaily.utils.CommonUtils;
 import com.github.javafaker.Faker;
@@ -17,11 +13,7 @@ public class TestBase {
 
     public static AndroidDriver driver;
     public static String loadPropertyFile = "android.properties";
-    public OnBoardingScreen onBoardingScreen;
-    public LoginScreen loginScreen;
-    public HomeScreen homeScreen;
-    public SignUpScreen signUpScreen;
-    public Faker faker;
+    protected static FemaleDaily femaleDaily;
 
     @BeforeSuite
     public void setUp() throws IOException {
@@ -31,6 +23,7 @@ public class TestBase {
             CommonUtils.loadAndroidConfigProp(loadPropertyFile);
             CommonUtils.setAndroidCapabilities();
             driver = CommonUtils.getAndroidDriver();
+            femaleDaily = new FemaleDaily(driver);
         }
     }
 
