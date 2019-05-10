@@ -21,4 +21,12 @@ public class AddPost extends TestBase {
         femaleDaily.plusMenuScreen().doAddPost("tagproduct");
     }
 
+    @Test
+    public void addPostWithReview(){
+        femaleDaily.onBoardingScreen().tapButton("login");
+        femaleDaily.loginScreen().doLogin("username");
+        femaleDaily.tapMenuBar().tapMenu("plus");
+        femaleDaily.plusMenuScreen().doAddPost("withreview");
+    }
+
 }

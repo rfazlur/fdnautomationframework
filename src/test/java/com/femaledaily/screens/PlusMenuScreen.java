@@ -26,7 +26,9 @@ public class PlusMenuScreen extends ScreenBase {
     }
 
     public void doAddPost(String type){
+
         faker = new Faker();
+
         if (type.equals("imageonly")){
             if (isElementPresentById(Constants.PLUS_MENU_ADDPOST, 10))
                 tapViewWithId(Constants.PLUS_MENU_ADDPOST);
@@ -39,6 +41,7 @@ public class PlusMenuScreen extends ScreenBase {
             if (isElementPresentById(Constants.ADDPOSTFORM_NEXT_BUTTON, 10))
                 tapViewWithId(Constants.ADDPOSTFORM_NEXT_BUTTON);
             isElementPresentByXpath(Constants.TITLE_TOOLBAR_FEED, 10);
+
         } else if (type.equals("tagproduct")){
             if (isElementPresentById(Constants.PLUS_MENU_ADDPOST, 10))
                 tapViewWithId(Constants.PLUS_MENU_ADDPOST);
@@ -55,6 +58,9 @@ public class PlusMenuScreen extends ScreenBase {
             if (isElementPresentById(Constants.ADDPOSTFORM_NEXT_BUTTON, 10))
                 tapViewWithId(Constants.ADDPOSTFORM_NEXT_BUTTON);
             isElementPresentByXpath(Constants.TITLE_TOOLBAR_FEED, 10);
+
+        } else {
+
         }
     }
 }
